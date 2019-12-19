@@ -64,6 +64,12 @@ def pen():
         penup += 1
 def clear():
     drawer.clear()
+def colorred():
+    drawer.color("red")
+def colorblue():
+    drawer.color("blue")
+def colornormal():
+    drawer.color("black")
 #create screen
 
 wn = trtl.Screen()
@@ -78,6 +84,9 @@ wn.onkeypress(Big, "o")
 wn.onkeypress(Small, "p")
 wn.onkeypress(pen,"u")
 wn.onkeypress(clear,"space")
+wn.onkeypress(colorred,"r")
+wn.onkeypress(colorblue,"b")
+wn.onkeypress(colornormal,"n")
 
 #listen
 
